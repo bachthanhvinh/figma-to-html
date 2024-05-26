@@ -1,16 +1,28 @@
 * {
   box-sizing: border-box;
 }
+/* use together */
 :root {
-  --font-heading: "Sen", sans-serif;
+  --font-Sen: "Sen", sans-serif;
   --primary-color: #ffb900;
 }
+/* reset font */
 html {
   font-size: 62.5%;
 }
+/* resetore font */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+}
+/* ========comment======= */
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-Sen);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.76px;
 }
 a {
   text-decoration: none;
@@ -221,4 +233,44 @@ a {
 }
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* ============popular====== */
+.popular {
+  margin-top: 135px;
+  /* background-color: blue; */
+  padding: 65px 0 55px;
+}
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-top .desc {
+  max-width: 458px;
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+.controls .control-btn {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.controls .control-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
 }
